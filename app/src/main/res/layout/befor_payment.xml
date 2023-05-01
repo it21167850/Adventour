@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/back3"
     tools:context=".MainActivity">
 
     <TextView
@@ -30,7 +30,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#30ffffff"
+        android:background="@drawable/round_input"
         android:drawableLeft="@drawable/ic_baseline_credit_card_24"
         android:drawablePadding="20dp"
         android:hint=" Amount"
@@ -43,11 +43,12 @@
         android:layout_width="224dp"
         android:layout_height="66dp"
         android:layout_below="@+id/amount"
-        android:layout_marginTop="225dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
         android:backgroundTint="@color/black"
 
-        android:text="PAY" />
+        android:text="PAY"
+        android:textSize="23dp" />
 
 
 </RelativeLayout>

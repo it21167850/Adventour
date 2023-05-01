@@ -109,7 +109,7 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#049E05"
+        android:background="#0E6655"
         android:foregroundTint="#FFFFFF"
         app:itemIconTint="@color/white"
         app:itemRippleColor="#FFFFFF"

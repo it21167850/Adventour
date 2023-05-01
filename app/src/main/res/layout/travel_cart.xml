@@ -4,72 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E7F8E9"
-    android:backgroundTint="#E7F8E9"
+    android:background="@drawable/back3"
+
     tools:context=".TravelCart">
+
 
     <Button
         android:id="@+id/button51"
-        android:layout_width="417dp"
-        android:layout_height="128dp"
-        android:background="#2ABA00"
-        android:drawableRight="@drawable/villa"
+        android:layout_width="380dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#D5F5E3 "
+        android:drawableRight="@drawable/bunglow"
         android:text="View Added Stays"
         android:textColor="#000000"
         android:textSize="16sp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintVertical_bias="0.123" />
 
     <Button
         android:id="@+id/button52"
-        android:layout_width="417dp"
-        android:layout_height="128dp"
-        android:background="#2ABA00"
+        android:layout_width="380dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#D5F5E3 "
         android:drawableRight="@drawable/guide8"
         android:text="View Added Guides"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
-
-    <Button
-        android:id="@+id/button54"
-        android:layout_width="417dp"
-        android:layout_height="128dp"
-        android:background="#2ABA00"
-        android:drawableRight="@drawable/vehicle1"
-        android:text="View Added Vehicles"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
-
-
-    <Button
-        android:id="@+id/button55"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:background="#E7F8E9"
-        android:backgroundTint="#E7F8E9"
-        android:text="Home"
-        android:textColor="#F1EAEA"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button51"
+        app:layout_constraintVertical_bias="0.117" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#049E05"
+        android:background="#0E6655"
         android:foregroundTint="#FFFFFF"
         app:itemIconTint="@color/white"
         app:itemRippleColor="#FFFFFF"
