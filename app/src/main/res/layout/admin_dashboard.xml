@@ -6,49 +6,49 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="944dp"
-        android:layout_height="1488dp"
+        android:id="@+id/imageView2"
+        android:layout_width="679dp"
+        android:layout_height="997dp"
+        android:background="#75E1EF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636"
-        app:srcCompat="@drawable/travely" />
+        app:srcCompat="@drawable/new_background" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="ADMIN DASHBOARD"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="390dp"
         android:layout_height="68dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#01322D"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#2196F3"
         android:text=" MANAGE CUSTOMER"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="390dp"
         android:layout_height="68dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="#01322D"
-        android:text="MANAGE TOURIST GUIDE"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="390dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#01322D"
+        android:backgroundTint="#2196F3"
         android:text="MANAGE ROOMS"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -57,11 +57,37 @@
         app:layout_constraintTop_toBottomOf="@+id/button9" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/button11"
         android:layout_width="390dp"
         android:layout_height="68dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="#01322D"
+        android:backgroundTint="#2196F3"
+        android:text="MANAGE TOURIST GUIDE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="390dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#2196F3"
+        android:text=" MANAGE GUIDE BOOK"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="390dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#2196F3"
         android:text=" MANAGE USERS"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -70,43 +96,16 @@
         app:layout_constraintTop_toBottomOf="@+id/button13" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/button12"
         android:layout_width="390dp"
         android:layout_height="68dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="#01322D"
-        android:text=" MANAGE GUIDE BOOK"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="390dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#01322D"
+        android:backgroundTint="#2196F3"
         android:text="CALCULATE TOTAL INCOME"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="16dp"
-        android:text="ADMIN DASHBOARD"
-        android:textColor="#F8F5F5"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

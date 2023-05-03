@@ -1,11 +1,26 @@
 package com.example.mad_project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.guide_details)
+        setContentView(R.layout.welcome_page)
+
+        val signinbtn = findViewById<Button>(R.id.signin)
+        val signupbtn = findViewById<Button>(R.id.signup)
+        signupbtn.setOnClickListener {
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
+        }
+        signinbtn.setOnClickListener{
+            val intent = Intent(this,SignIn::class.java)
+            startActivity(intent)
+        }
+
     }
 }

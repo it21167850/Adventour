@@ -14,9 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:backgroundTint="#99F381"
+        android:backgroundTint="#0E6655"
         android:text="Select Another Guide"
-        android:textColor="#020202"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -27,22 +27,22 @@
         android:id="@+id/button35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="540dp"
-        android:backgroundTint="#31CA08"
+        android:backgroundTint="#0E6655"
         android:elevation="@dimen/cardview_compat_inset_shadow"
         android:text="Add This Guide To Travel Cart"
-        android:textColor="#020202"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="308dp"
+        android:layout_marginBottom="288dp"
         android:text="Krishan Silva"
         android:textColor="#030361"
         android:textSize="20sp"
@@ -50,59 +50,69 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="271dp"
         android:layout_height="38dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="240dp"
         android:text="I’m a 36 years old chauffeur guide. "
         android:textColor="#090808"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="310dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="200dp"
         android:text="For 5 years I’ve been working in tourism"
         android:textColor="#090808"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="306dp"
         android:layout_height="63dp"
-        android:layout_marginBottom="164dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
         android:text="my father and my grandfather used to work in tourism too.It is my pleasure to guide you around Sri Lanka"
         android:textColor="#090808"
-        android:layout_centerHorizontal="true"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="325dp"
-        android:layout_height="564dp"
-        android:layout_marginBottom="232dp"
+        android:layout_width="328dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="408dp"
+
         android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:circularflow_radiusInDP="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button32"
+        app:layout_constraintVertical_bias="0.551"
         app:srcCompat="@drawable/guide6" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
