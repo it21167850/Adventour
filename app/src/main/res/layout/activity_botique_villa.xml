@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".botique_villa">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="163dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="88dp"
+            android:background="#E1E4E2"
+            android:backgroundTint="#E1E4E2"
+            android:text="Botique Villa"
+            android:textAlignment="center"
+            android:textColor="#032909"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="203dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="188dp"
+            android:src="@drawable/hotel1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.014"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="116dp"
+            android:layout_height="38dp"
+
+            android:layout_marginStart="52dp"
+            android:backgroundTint="#186A3B"
+            android:text="Villa A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="203dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="188dp"
+            android:src="@drawable/hotel2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="116dp"
+            android:layout_height="38dp"
+
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#186A3B"
+            android:text="Villa B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="203dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="388dp"
+            android:src="@drawable/hotel3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="116dp"
+            android:layout_height="38dp"
+
+            android:backgroundTint="#186A3B"
+            android:text="Villa C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="203dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="388dp"
+            android:src="@drawable/hotel4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="116dp"
+            android:layout_height="38dp"
+
+            android:backgroundTint="#186A3B"
+            android:text="Villa D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
