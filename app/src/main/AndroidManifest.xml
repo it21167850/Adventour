@@ -13,10 +13,44 @@
         android:theme="@style/Theme.MadProject"
         tools:targetApi="31">
         <activity
+            android:name=".travel_cart1"
+            android:exported="true" />
+        <activity
+            android:name=".Cart"
+            android:exported="true" />
+
+        <activity
+            android:name=".check_villa_details"
+            android:exported="true" />
+        <activity
+            android:name=".view_villa"
+            android:exported="true" />
+        <activity
+            android:name=".botique_villa"
+            android:exported="true" />
+        <activity
+            android:name=".updating_a_records"
+            android:exported="true" />
+        <activity
+            android:name=".select_destination"
+            android:exported="true" />
+        <activity
+            android:name=".kandy"
+            android:exported="true" />
+        <activity
+            android:name=".home"
+            android:exported="true" />
+        <activity
+            android:name=".addtocart"
+            android:exported="true" />
+        <activity
+            android:name=".villa"
+            android:exported="true" />
+        <activity
             android:name=".Findastay"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SignIn"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +59,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUp" />
-        <activity android:name=".SignIn" />
     </application>
 
 </manifest>
