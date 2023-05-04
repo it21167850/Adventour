@@ -28,16 +28,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="365dp"
-        android:layout_height="142dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
 
     <TextView
         android:id="@+id/details_title"
@@ -97,90 +87,6 @@
         app:layout_constraintStart_toEndOf="@+id/details_content"
         app:layout_constraintTop_toTopOf="@+id/textView11" />
 
-    <TextView
-        android:id="@+id/details_title1"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:padding="10dp"
-        android:text="Thilina Hansana"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-    <TextView
-        android:id="@+id/details_content1"
-        android:layout_width="230dp"
-        android:layout_height="41dp"
-        android:padding="10dp"
-        android:text="thilina@gmail.com"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/details_title1" />
-
-    <TextView
-        android:id="@+id/details_content"
-        android:layout_width="230dp"
-        android:layout_height="41dp"
-        android:padding="10dp"
-        android:text="thilina@gmail.com"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/details_title" />
-
-    <TextView
-        android:id="@+id/details_content"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="0712345634"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/details_content1" />
-
-    <Button
-        android:id="@+id/details_delete_btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="#E91E63"
-        android:padding="10dp"
-        android:text="Delete"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toEndOf="@+id/details_content1"
-        app:layout_constraintTop_toBottomOf="@+id/details_update_btn1"
-        app:layout_constraintVertical_bias="0.6" />
-
-    <Button
-        android:id="@+id/details_update_btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="#4CAF50"
-        android:padding="10dp"
-        android:text="Update"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/details_content1"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

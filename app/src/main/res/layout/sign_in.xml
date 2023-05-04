@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edtemail"
         android:layout_width="304dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -34,10 +34,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.598"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtpass" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/edtpass"
         android:layout_width="303dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnsignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
 
     <Button
         android:id="@+id/button16"
@@ -82,7 +82,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignin"
         app:layout_constraintVertical_bias="0.027" />
 
     <ImageView
