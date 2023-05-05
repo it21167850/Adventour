@@ -3,18 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="679dp"
-        android:layout_height="997dp"
-        android:background="#75E1EF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/new_background" />
+    android:layout_height="match_parent"
+    android:background="@drawable/bb2">
 
     <TextView
         android:id="@+id/textView32"
@@ -24,6 +14,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="16dp"
         android:text="ADMIN DASHBOARD"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,10 +23,10 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="68dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#2196F3"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#01322D"
         android:text=" MANAGE CUSTOMER"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -45,10 +36,10 @@
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#01322D"
         android:text="MANAGE ROOMS"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -58,10 +49,10 @@
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#01322D"
         android:text="MANAGE TOURIST GUIDE"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -71,10 +62,10 @@
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#01322D"
         android:text=" MANAGE GUIDE BOOK"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -84,10 +75,10 @@
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#01322D"
         android:text=" MANAGE USERS"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -97,10 +88,10 @@
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#01322D"
         android:text="CALCULATE TOTAL INCOME"
         android:textSize="24sp"
         android:textStyle="bold"

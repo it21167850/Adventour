@@ -4,26 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back4"
     >
 
     <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="571dp"
-        android:layout_height="405dp"
-        android:layout_marginBottom="360dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home" />
-
-    <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="158dp"
-        android:layout_height="119dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        android:layout_width="344dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pic" />
@@ -32,9 +22,8 @@
         android:id="@+id/button37"
         android:layout_width="306dp"
         android:layout_height="70dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="272dp"
-        android:backgroundTint="#186A3B"
+        android:backgroundTint="#01322D"
         android:text="Find A Stay"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -43,14 +32,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
     <Button
         android:id="@+id/button41"
         android:layout_width="306dp"
         android:layout_height="73dp"
+        android:layout_marginTop="23dp"
         android:layout_marginBottom="112dp"
-        android:backgroundTint="#186A3B"
+        android:backgroundTint="#01322D"
         android:text="Book A Guide"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -58,20 +48,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button42" />
 
     <Button
         android:id="@+id/button42"
         android:layout_width="309dp"
         android:layout_height="73dp"
         android:layout_marginBottom="192dp"
-        android:backgroundTint="#186A3B"
+        android:backgroundTint="#01322D"
         android:text="Best Destinations"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button37" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

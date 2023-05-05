@@ -14,7 +14,7 @@ class SelectSignUp : AppCompatActivity() {
         val btnguide = findViewById<Button>(R.id.btnguide)
 
         btncustomer.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
+            val intent = Intent(this, SignUpAuth::class.java)
             startActivity(intent)
         }
         btnguide.setOnClickListener {

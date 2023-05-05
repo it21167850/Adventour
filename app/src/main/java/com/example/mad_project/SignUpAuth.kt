@@ -17,25 +17,25 @@ class SignUpAuth : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
-        binding.btncreate.setOnClickListener{
-            val email = binding.email.text.toString()
-            val pass = binding.password.text.toString()
-            val confirmpass = binding.confirmpass.text.toString()
+        binding.btnusercreate.setOnClickListener {
+            val email = binding.useremail.text.toString()
+            val pass = binding.userpassword.text.toString()
+            val confirmpass = binding.userconfirmpass.text.toString()
 
-            if(email.isNotEmpty() && pass.isNotEmpty() && confirmpass.isNotEmpty()){
-                if(pass == confirmpass){
-                    firebaseAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener {
-                        if(it.isSuccessful){
+            if (email.isNotEmpty() && pass.isNotEmpty() && confirmpass.isNotEmpty()) {
+                if (pass == confirmpass) {
+                    firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
+                        if (it.isSuccessful) {
                             val intent = Intent(this, SignIn::class.java)
                             startActivity(intent)
-                        }else{
+                        } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }
                     }
-                }else{
+                } else {
                     Toast.makeText(this, "Password is Not matching", Toast.LENGTH_SHORT).show()
                 }
-            }else{
+            } else {
                 Toast.makeText(this, "Empty Field are not allowed !!", Toast.LENGTH_SHORT).show()
             }
         }

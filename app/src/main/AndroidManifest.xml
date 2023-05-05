@@ -28,6 +28,8 @@
         <activity android:name=".SelectSignUp"/>
         <activity android:name=".SignUpGuide"/>
         <activity android:name=".SignUpAuth"/>
+        <activity android:name=".AdminDashboard"/>
+        <activity android:name=".GuideDashboard"/>
     </application>
 
 </manifest>

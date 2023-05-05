@@ -19,41 +19,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/useremail"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/rounde_input"
-        android:ems="10"
-        android:hint="Enter Email"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <EditText
-        android:id="@+id/userconfirmpass"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounde_input"
-        android:ems="10"
-        android:hint="Re-Enter Password"
-
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userpassword" />
-
     <Button
-        android:id="@+id/btnusercreate"
+        android:id="@+id/btnguidecreate"
         android:layout_width="325dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#0C0C0C"
         android:text="Create Account"
@@ -61,13 +32,27 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userconfirmpass" />
+        app:layout_constraintTop_toBottomOf="@+id/guideconfirmpass" />
 
     <EditText
-        android:id="@+id/userpassword"
+        android:id="@+id/guideemail"
         android:layout_width="325dp"
         android:layout_height="45dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounde_input"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <EditText
+        android:id="@+id/guidepassword"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/rounde_input"
         android:ems="10"
         android:hint="Enter Password"
@@ -76,7 +61,22 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/useremail" />
+        app:layout_constraintTop_toBottomOf="@+id/guideemail" />
+
+    <EditText
+        android:id="@+id/guideconfirmpass"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounde_input"
+        android:ems="10"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword"
+
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidepassword" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -92,19 +92,29 @@
         app:srcCompat="@drawable/istockphoto_1281150061_612x612" />
 
     <TextView
-        android:id="@+id/haveaccount"
+        android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:text="your email start with guide##@gmail.com"
+        android:textColor="#D51717"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/haveaccountguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Have an Account"
-        android:textColor="#2C42BF"
+        android:textColor="#3046C1"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnusercreate"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btnguidecreate"
+        app:layout_constraintVertical_bias="0.369" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
