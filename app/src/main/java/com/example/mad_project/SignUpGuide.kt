@@ -29,7 +29,7 @@ class SignUpGuide : AppCompatActivity() {
                     if (pass == confirmpass) {
                         firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
                             if (it.isSuccessful) {
-                                val intent = Intent(this, SignIn::class.java)
+                                val intent = Intent(this, SignUpGuideDtails::class.java)
                                 startActivity(intent)
                             } else {
                                 Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

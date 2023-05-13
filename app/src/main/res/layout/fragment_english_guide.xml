@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button38"
+                android:layout_width="165dp"
+                android:layout_height="245dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/guide5"
+                android:text="Krishan Silva"
+                android:textColor="#020202"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/button40"
+                android:layout_width="165dp"
+                android:layout_height="245dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/guide3"
+                android:text="Amal Perera"
+                android:textColor="#020202"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/button39"
+                android:layout_width="165dp"
+                android:layout_height="245dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/guide4"
+                android:text="Kasun Fernando"
+                android:textColor="#020202"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="165dp"
+                android:layout_height="245dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/guide2"
+                android:text="Saman Kumara"
+                android:textColor="#020202"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have most talented tour guides"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button23" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:text="Select Another Language"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

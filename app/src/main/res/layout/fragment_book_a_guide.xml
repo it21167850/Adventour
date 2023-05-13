@@ -3,30 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/back4"
-    tools:context=".BookAGuide">
+    android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/frame_layout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="359dp"
-        android:layout_height="537dp"
+        android:layout_width="360dp"
+        android:layout_height="522dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rectangle"
-
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.076" />
 
     <Button
-        android:id="@+id/button26"
+        android:id="@+id/button_english"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginBottom="180dp"
@@ -42,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/button_french"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginBottom="180dp"
@@ -58,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <Button
-        android:id="@+id/button28"
+        android:id="@+id/button_chinese"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginBottom="180dp"
@@ -74,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <Button
-        android:id="@+id/button29"
+        android:id="@+id/button_german"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:backgroundTint="#0E6655"
@@ -86,10 +79,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button26" />
+        app:layout_constraintTop_toBottomOf="@+id/button_english" />
 
     <Button
-        android:id="@+id/button31"
+        android:id="@+id/button_spanish"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:backgroundTint="#0E6655"
@@ -101,10 +94,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.832"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button28" />
+        app:layout_constraintTop_toBottomOf="@+id/button_chinese" />
 
     <Button
-        android:id="@+id/button30"
+        android:id="@+id/button_korean"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:backgroundTint="#0E6655"
@@ -116,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button27" />
+        app:layout_constraintTop_toBottomOf="@+id/button_french" />
 
     <TextView
         android:id="@+id/textView20"
@@ -169,7 +162,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:text="Book A Guide"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -179,27 +172,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#0E6655"
-        android:foregroundTint="#FFFFFF"
-        app:itemIconTint="@color/white"
-        app:itemRippleColor="#FFFFFF"
-        app:itemTextColor="#FBFBFB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="285dp"
-        android:layout_height="200dp"
+        android:layout_width="248dp"
+        android:layout_height="167dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/guidepic3"
         app:layout_constraintEnd_toEndOf="parent"

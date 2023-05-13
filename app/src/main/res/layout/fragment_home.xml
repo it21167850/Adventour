@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="246dp"
+        android:layout_height="238dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/pic"
+        />
+
+    <Button
+        android:id="@+id/button37"
+        android:layout_width="306dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="#01322D"
+        android:text="Find A Stay"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_book_a_guide"
+        android:layout_width="306dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#01322D"
+        android:text="Book A Guide"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button42"
+        android:layout_width="309dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="192dp"
+        android:backgroundTint="#01322D"
+        android:text="Best Destinations"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

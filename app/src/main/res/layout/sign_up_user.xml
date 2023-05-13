@@ -20,11 +20,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnusercreate"
+        android:id="@+id/btnuserSubmit"
         android:layout_width="325dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#0C0C0C"
         android:text="Submit"
@@ -32,7 +32,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText13" />
+        app:layout_constraintTop_toBottomOf="@+id/edtuserAddress" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -48,10 +48,10 @@
         app:srcCompat="@drawable/istockphoto_1281150061_612x612" />
 
     <EditText
-        android:id="@+id/editTextText12"
+        android:id="@+id/edtuserName"
         android:layout_width="325dp"
         android:layout_height="45dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/round_input"
         android:ems="10"
         android:hint="Enter Full Name"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editTextText13"
+        android:id="@+id/edtuserAddress"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -74,10 +74,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/edtuserPhone" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/edtuserPhone"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -87,9 +87,22 @@
         android:inputType="phone"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText12" />
+        app:layout_constraintTop_toBottomOf="@+id/edtuserEmail" />
+
+    <EditText
+        android:id="@+id/edtuserEmail"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_input"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtuserName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

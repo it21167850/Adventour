@@ -67,7 +67,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnView"
+        android:id="@+id/button9"
         android:layout_width="130dp"
         android:layout_height="67dp"
         android:layout_marginBottom="156dp"
@@ -82,10 +82,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnCheck"
-
         android:id="@+id/btnguide"
-
         android:layout_width="127dp"
         android:layout_height="62dp"
         android:layout_marginBottom="156dp"

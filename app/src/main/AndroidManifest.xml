@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MadProject"
         tools:targetApi="31">
         <activity
+            android:name=".UserlistActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,15 +24,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".SignUp" />
         <activity android:name=".SignIn" />
-        <activity android:name=".home"/>
-        <activity android:name=".SelectSignUp"/>
-        <activity android:name=".SignUpGuide"/>
-        <activity android:name=".SignUpAuth"/>
-        <activity android:name=".AdminDashboard"/>
-        <activity android:name=".GuideDashboard"/>
+        <activity android:name=".home" />
+        <activity android:name=".SelectSignUp" />
+        <activity android:name=".SignUpGuide" />
+        <activity android:name=".SignUpAuth" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".GuideDashboard" />
+        <activity android:name=".SignUpGuideDtails" />
+        <activity android:name=".BookAGuide" />
     </application>
 
 </manifest>

@@ -33,11 +33,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <EditText
-
-        android:id="@+id/cusName"
-
         android:id="@+id/fullName"
-
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
@@ -52,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
-        android:id="@+id/newNight"
+        android:id="@+id/edtguideName"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -64,10 +60,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newDate" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
     <EditText
-        android:id="@+id/newMail"
+        android:id="@+id/editTextDate"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -79,14 +75,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/newphone" />
-
         app:layout_constraintTop_toBottomOf="@+id/useremail" />
 
-
     <EditText
-        android:id="@+id/newDate"
+        android:id="@+id/editTextNumber2"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -98,14 +90,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newMail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <EditText
-
-        android:id="@+id/newphone"
-
         android:id="@+id/useremail"
-
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -117,14 +105,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/cusName" />
-
         app:layout_constraintTop_toBottomOf="@+id/fullName" />
 
-
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/button5"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginTop="32dp"
@@ -133,12 +117,13 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newNight" />
+        app:layout_constraintTop_toBottomOf="@+id/edtguideName" />
 
     <Button
-        android:id="@+id/deletebtn"
+        android:id="@+id/button6"
         android:layout_width="200dp"
         android:layout_height="55dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#CB4335"
         android:text="Delete"
         android:textSize="20dp"
@@ -146,8 +131,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newNight"
-        app:layout_constraintVertical_bias="0.728" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.108" />
 
     <Button
         android:id="@+id/button7"

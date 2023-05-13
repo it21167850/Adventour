@@ -1,17 +1,16 @@
 package com.example.mad_project
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.mad_project.databinding.ActivityHomeBinding
+import com.example.mad_project.databinding.BookAGuideBinding
 
-class home : AppCompatActivity() {
+class BookAGuide : AppCompatActivity() {
 
-
-    private lateinit var binding: ActivityHomeBinding
+    private lateinit var binding: BookAGuideBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHomeBinding.inflate(layoutInflater)
+        binding = BookAGuideBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(HomeFragment())
 
@@ -35,8 +34,7 @@ class home : AppCompatActivity() {
             true
 
         }
-
-    }
+}
     private fun replaceFragment(fragment : Fragment){
 
         val fragmentManager = supportFragmentManager

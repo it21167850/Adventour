@@ -5,5 +5,15 @@ class UserModel (
     var name:String? = null,
     var email:String? = null,
     var phone:String? = null,
-    var password:String? = null,
+    var address:String? = null
+)
+
+class GuideModel(
+    var guideid:String? =null,
+    var name:String? = null,
+    var email: String? =null,
+    var nic:String? = null,
+    var phone: String?=null,
+    var description:String?=null,
+    var language : ArrayList<String>? = null
 )
