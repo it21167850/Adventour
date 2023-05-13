@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editcusPhone"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editcusEmail"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -51,7 +51,7 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusPhone" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -68,7 +68,7 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusEmail" />
 
     <EditText
         android:id="@+id/editTextText5"
@@ -105,7 +105,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

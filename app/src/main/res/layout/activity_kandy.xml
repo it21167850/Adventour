@@ -21,7 +21,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="307dp"
@@ -87,7 +86,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonBo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -102,7 +101,7 @@
         app:layout_constraintVertical_bias="0.111" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonBu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 

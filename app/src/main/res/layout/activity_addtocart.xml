@@ -15,27 +15,10 @@
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916" />
-
-    <EditText
-        android:id="@+id/editTextText11"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounde_input"
-        android:backgroundTint="#70E1D6"
-        android:ems="10"
-        android:hint="Need a  Chef"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView8"
@@ -53,11 +36,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editcusName"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/rounde_input"
         android:backgroundTint="#70E1D6"
@@ -70,26 +53,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounde_input"
-        android:backgroundTint="#70E1D6"
-        android:ems="10"
-        android:hint="Enter E-mail"
-        android:inputType="number"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+<!--    <EditText-->
+<!--        android:id="@+id/editcusNic"-->
+<!--        android:layout_width="325dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@drawable/rounde_input"-->
+<!--        android:backgroundTint="#70E1D6"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Enter Nic Number"-->
+<!--        android:inputType="text"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.385"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editcusPhone"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -99,15 +82,65 @@
         android:backgroundTint="#70E1D6"
         android:ems="10"
         android:hint="Phone Number"
-        android:inputType="text"
+        android:inputType="number|text|phone"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusName" />
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/editcusNight"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounde_input"
+        android:backgroundTint="#70E1D6"
+        android:ems="10"
+        android:hint="Number Of Nights"
+        android:inputType="number|text"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editcusDate" />
+
+    <EditText
+        android:id="@+id/editcusPeople"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounde_input"
+        android:backgroundTint="#70E1D6"
+        android:ems="10"
+        android:hint="Number Of Peoples"
+        android:inputType="number|text"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editcusNight" />
+
+    <EditText
+        android:id="@+id/editcusEmail"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounde_input"
+        android:backgroundTint="#70E1D6"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="text|textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editcusPhone" />
+
+    <EditText
+        android:id="@+id/editcusDate"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -117,51 +150,15 @@
         android:backgroundTint="#70E1D6"
         android:ems="10"
         android:hint="Check in Date"
-        android:inputType="text"
+        android:inputType="date|text"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounde_input"
-        android:backgroundTint="#70E1D6"
-        android:ems="10"
-        android:hint="Number Of Nights"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
-
-    <EditText
-        android:id="@+id/editTextText10"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounde_input"
-        android:backgroundTint="#70E1D6"
-        android:ems="10"
-        android:hint="Number Of Peoples"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusEmail" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -174,7 +171,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText11" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusPeople" />
 
     <ImageView
         android:id="@+id/imageView5"
