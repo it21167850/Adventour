@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/newNight"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -68,7 +68,29 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
+
+        android:id="@+id/editcusPhone"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounde_input"
+        android:backgroundTint="#70E1D6"
+        android:ems="10"
+        android:hint="Enter NIC Number"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newNight" />
+
+    <EditText
+        android:id="@+id/editcusEmail"
+
         android:id="@+id/editTextText3"
+
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -82,10 +104,10 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusPhone" />
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/editcusDate"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -99,7 +121,7 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusEmail" />
 
     <EditText
         android:id="@+id/editTextNumber"
@@ -116,12 +138,21 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/editcusDate" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="300dp"
         android:layout_height="55dp"
+
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
