@@ -33,7 +33,11 @@
         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <EditText
+
         android:id="@+id/cusName"
+
+        android:id="@+id/fullName"
+
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
@@ -75,7 +79,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/newphone" />
+
+        app:layout_constraintTop_toBottomOf="@+id/useremail" />
+
 
     <EditText
         android:id="@+id/newDate"
@@ -93,7 +101,11 @@
         app:layout_constraintTop_toBottomOf="@+id/newMail" />
 
     <EditText
+
         android:id="@+id/newphone"
+
+        android:id="@+id/useremail"
+
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -105,7 +117,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/cusName" />
+
+        app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
 
     <Button
         android:id="@+id/button20"

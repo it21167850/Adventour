@@ -7,7 +7,11 @@
     android:background="@drawable/back1">
 
     <Button
+
         android:id="@+id/buttonC"
+
+        android:id="@+id/btnsignin"
+
         android:layout_width="230dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
@@ -29,10 +33,17 @@
         android:shadowDx="12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/buttonC" />
 
     <EditText
         android:id="@+id/cusName"
+
+        app:layout_constraintTop_toBottomOf="@+id/btnsignin" />
+
+    <EditText
+        android:id="@+id/fullName"
+
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="170dp"
@@ -75,7 +86,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/newphone" />
+
+        app:layout_constraintTop_toBottomOf="@+id/useremail" />
+
 
     <EditText
         android:id="@+id/newDate"
@@ -93,7 +108,11 @@
         app:layout_constraintTop_toBottomOf="@+id/newMail" />
 
     <EditText
+
         android:id="@+id/newphone"
+
+        android:id="@+id/useremail"
+
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -105,7 +124,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/cusName" />
+
+        app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -128,7 +151,11 @@
         android:id="@+id/imageView4"
         android:layout_width="346dp"
         android:layout_height="161dp"
+
         app:layout_constraintBottom_toTopOf="@+id/cusName"
+
+        app:layout_constraintBottom_toTopOf="@+id/fullName"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView6"
@@ -141,7 +168,9 @@
         android:backgroundTint="@color/black"
         android:text="Add To Travel Cart"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="93dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
