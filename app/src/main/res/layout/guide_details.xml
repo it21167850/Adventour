@@ -6,34 +6,35 @@
     android:layout_height="match_parent">
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/checkBoxkorean"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Korean"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox6"
-        app:layout_constraintHorizontal_bias="0.443"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxSpanish"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxgerman"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxchines" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/checkBoxSpanish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:text="Spanish"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxchines"
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkBoxgerman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:text="German"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxchines" />
 
     <TextView
         android:id="@+id/textView8"
@@ -51,7 +52,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edtguideEmail"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounde_input"
+        android:backgroundTint="#70E1D6"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtguideName" />
+
+    <EditText
+        android:id="@+id/edtguideName"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -68,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/edtguidePhone"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -82,10 +100,10 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/edtguideNic" />
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/edtguideDes"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -99,10 +117,10 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/edtguidePhone" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/edtguideNic"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -116,14 +134,13 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtguideEmail" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnguideSubmit"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#141717"
@@ -134,12 +151,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxkorean"
+        app:layout_constraintVertical_bias="0.315" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="147dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -151,7 +169,7 @@
         app:srcCompat="@drawable/travel_guide_and_tour_with_showing_interesting_places_to_group_of_tourist_for_planning_vacation_in_flat_cartoon_hand_drawn_templates_illustration_vector" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxenglish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -160,17 +178,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBoxfrench"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="French"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxchines"
         app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxenglish"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBoxchines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
@@ -182,12 +200,11 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:text="Language :"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+        app:layout_constraintTop_toBottomOf="@+id/edtguideDes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,14 @@
 package com.example.mad_project
 
-import android.provider.SyncStateContract.Helpers.update
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import java.nio.file.Files.delete
 
 
-class MyAdapter(private val userList : ArrayList<UserModel>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val userList: ArrayList<UserModel>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {

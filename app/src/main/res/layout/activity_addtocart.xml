@@ -19,24 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.916" />
 
-    <EditText
-        android:id="@+id/editTextText11"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounde_input"
-        android:backgroundTint="#70E1D6"
-        android:ems="10"
-        android:hint="Need a  Chef"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -53,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtguideName"
+        android:id="@+id/editcusName"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -71,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/edtguideNic"
+        android:id="@+id/editcusEmail"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -86,10 +68,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtguideName" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusName" />
 
     <EditText
-        android:id="@+id/edtguidePhone"
+        android:id="@+id/editcusPhone"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -104,10 +86,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtguideNic" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusEmail" />
 
     <EditText
-        android:id="@+id/edtguideDes"
+        android:id="@+id/editcusDate"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -122,10 +104,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtguidePhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusPhone" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/editcusNight"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -140,10 +122,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtguideDes" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusDate" />
 
     <EditText
-        android:id="@+id/editTextText10"
+        android:id="@+id/editcusPeople"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -158,14 +140,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editcusNight" />
 
     <Button
-        android:id="@+id/btnguideSubmit"
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#141717"
         android:text="Submit"
@@ -174,7 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText11" />
+        tools:layout_editor_absoluteY="664dp" />
 
     <ImageView
         android:id="@+id/imageView5"

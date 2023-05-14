@@ -24,5 +24,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SelectSignUp::class.java)
             startActivity(intent)
         }
+
+
     }
 }

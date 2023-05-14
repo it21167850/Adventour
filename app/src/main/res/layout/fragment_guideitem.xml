@@ -30,7 +30,6 @@
                 tools:srcCompat="@drawable/_139981" />
 
             <TextView
-                android:id="@+id/tvguidename"
                 android:layout_width="188dp"
                 android:layout_height="34dp"
                 android:layout_gravity=""
@@ -52,7 +51,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/add_guide_cart"
+                android:id="@+id/addguide_cart"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
 

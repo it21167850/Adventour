@@ -8,28 +8,29 @@ import android.util.Log
 import android.view.inputmethod.InputBinding
 import android.widget.Toast
 import com.example.mad_project.databinding.ActivityUpdatingArecordsBinding
+import com.example.mad_project.databinding.UpdatingARecordeBinding
 import com.google.firebase.database.*
 import java.util.Date
 import java.util.jar.Attributes.Name
 
 class updating_a_records : AppCompatActivity() {
 
-    private lateinit var binding: ActivityUpdatingArecordsBinding
+    private lateinit var binding: UpdatingARecordeBinding
     private lateinit var databaseReference: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityUpdatingArecordsBinding.inflate(layoutInflater)
+        binding = UpdatingARecordeBinding.inflate(layoutInflater)
 
 
         setContentView(binding.root)
 
         binding.btn40.setOnClickListener {
             val name = binding.cusName.text.toString()
-            val phone = binding.newphone.text.toString()
-            val email = binding.newMail.text.toString()
-            val date = binding.newDate.text.toString()
-            val nights = binding.newNight.text.toString()
-            val people = binding.newPeoples.text.toString()
+            val phone = binding.cusPhone.text.toString()
+            val email = binding.cusEmail.text.toString()
+            val date = binding.cusDate.text.toString()
+            val nights = binding.cusNights.text.toString()
+            val people = binding.cusPeoples.text.toString()
 
             updateData(name,phone,email,date,nights,people )
 
@@ -49,7 +50,7 @@ class updating_a_records : AppCompatActivity() {
 
 
 
-        binding.serchBtn.setOnClickListener {
+        binding.btnSerch.setOnClickListener {
             val serchid: String = binding.serch.text.toString()
             if (serchid.isNotEmpty()) {
                 readData(serchid)
@@ -90,13 +91,13 @@ class updating_a_records : AppCompatActivity() {
 
 
 
-                                binding.newDate.setText(date.toString())
-                                binding.newMail.setText(email.toString())
+                                binding.cusDate.setText(date.toString())
+                                binding.cusEmail.setText(email.toString())
                                 binding.cusName.setText(name.toString())
                                 //binding.NewNic.setText(Nic.toString())
-                                binding.newNight.setText(nights.toString())
-                                binding.newPeoples.setText(people.toString())
-                                binding.newphone.setText(phone.toString())
+                                binding.cusNights.setText(nights.toString())
+                                binding.cusPeoples.setText(people.toString())
+                                binding.cusPhone.setText(phone.toString())
                             } else {
                                 //Toast.makeText(this, "ID is not exist", Toast.LENGTH_SHORT).show()
                                Log.d("TAG", "Data is empty")
@@ -157,11 +158,11 @@ class updating_a_records : AppCompatActivity() {
         val user= mapOf<String,String>("cusPhone" to cusPhone,"cusEmail" to cusEmail, "cusDate" to cusDate,"cusNight" to cusNight,"cusPeople" to cusPeople)
         databaseReference.child(cusName).updateChildren(user).addOnSuccessListener {
             binding.cusName.text.clear()
-            binding.newphone.text.clear()
-            binding.newMail.text.clear()
-            binding.newDate.text.clear()
-            binding.newNight.text.clear()
-            binding.newPeoples.text.clear()
+            binding.cusPhone.text.clear()
+            binding.cusEmail.text.clear()
+            binding.cusDate.text.clear()
+            binding.cusNights.text.clear()
+            binding.cusPeoples.text.clear()
             Toast.makeText(this,"updated",Toast.LENGTH_SHORT).show()
         }.addOnFailureListener{
             Toast.makeText(this,"unable update",Toast.LENGTH_SHORT).show()
@@ -172,11 +173,11 @@ class updating_a_records : AppCompatActivity() {
         databaseReference=FirebaseDatabase.getInstance().getReference("customers")
         databaseReference.child(cusName).removeValue().addOnSuccessListener {
             binding.cusName.text.clear()
-            binding.newphone.text.clear()
-            binding.newMail.text.clear()
-            binding.newDate.text.clear()
-            binding.newNight.text.clear()
-            binding.newPeoples.text.clear()
+            binding.cusPhone.text.clear()
+            binding.cusEmail.text.clear()
+            binding.cusDate.text.clear()
+            binding.cusNights.text.clear()
+            binding.cusPeoples.text.clear()
 
             Toast.makeText(this,"Delete",Toast.LENGTH_SHORT).show()
         }.addOnFailureListener{

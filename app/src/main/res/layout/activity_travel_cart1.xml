@@ -12,7 +12,7 @@
 
         android:id="@+id/btnCheck"
 
-        android:id="@+id/btnguide"
+
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
