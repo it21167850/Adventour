@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatDelegate.NightMode
 import java.util.Date
 
 class AddtocartModel(
-    var cusNic:String?=null,
+    //var cusNic:String?=null,
     var cusName:String?=null,
     var cusPhone: String?=null,
     var cusEmail: String?=null,

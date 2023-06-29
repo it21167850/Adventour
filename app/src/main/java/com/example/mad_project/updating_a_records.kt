@@ -51,18 +51,18 @@ class updating_a_records : AppCompatActivity() {
 
 
         binding.btnSerch.setOnClickListener {
-            val serchid: String = binding.serch.text.toString()
-            if (serchid.isNotEmpty()) {
-                readData(serchid)
+            val cusName: String = binding.serch.text.toString()
+            if (cusName.isNotEmpty()) {
+                readData(cusName)
             } else {
-                Toast.makeText(this, "enter nic number", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "enter name", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun readData(cusName:String) {
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("customers")
+        databaseReference = FirebaseDatabase.getInstance().getReference("booking")
         databaseReference.orderByChild("cusName").equalTo(cusName)
 
             .addListenerForSingleValueEvent(object : ValueEventListener {
@@ -79,7 +79,7 @@ class updating_a_records : AppCompatActivity() {
                             val userData = Data.getValue(AddtocartModel::class.java)
 
                             if (userData!=null) {
-                                val Nic= userData.cusNic.toString()
+                                //val Nic= userData.cusNic.toString()
                                 val name = userData.cusName.toString()
                                 val phone = userData.cusPhone.toString()
                                 val email = userData.cusEmail.toString()
@@ -91,16 +91,20 @@ class updating_a_records : AppCompatActivity() {
 
 
 
-                                binding.cusDate.setText(date.toString())
-                                binding.cusEmail.setText(email.toString())
+
+
                                 binding.cusName.setText(name.toString())
+                                binding.cusPhone.setText(phone.toString())
+                                binding.cusEmail.setText(email.toString())
+                                binding.cusDate.setText(date.toString())
                                 //binding.NewNic.setText(Nic.toString())
                                 binding.cusNights.setText(nights.toString())
                                 binding.cusPeoples.setText(people.toString())
-                                binding.cusPhone.setText(phone.toString())
+
                             } else {
                                 //Toast.makeText(this, "ID is not exist", Toast.LENGTH_SHORT).show()
                                Log.d("TAG", "Data is empty")
+
 
                             }
 
@@ -154,10 +158,10 @@ class updating_a_records : AppCompatActivity() {
 
     }
     private fun updateData(cusName:String,cusPhone:String,cusEmail:String,cusDate:String,cusNight:String, cusPeople:String){
-        databaseReference = FirebaseDatabase.getInstance().getReference("customers")
-        val user= mapOf<String,String>("cusPhone" to cusPhone,"cusEmail" to cusEmail, "cusDate" to cusDate,"cusNight" to cusNight,"cusPeople" to cusPeople)
+        databaseReference = FirebaseDatabase.getInstance().getReference("booking")
+        val user= mapOf<String,String>("cusName" to cusName,"cusPhone" to cusPhone,"cusEmail" to cusEmail, "cusDate" to cusDate,"cusNight" to cusNight,"cusPeople" to cusPeople)
         databaseReference.child(cusName).updateChildren(user).addOnSuccessListener {
-            binding.cusName.text.clear()
+            //binding.cusName.text.clear()
             binding.cusPhone.text.clear()
             binding.cusEmail.text.clear()
             binding.cusDate.text.clear()
@@ -170,7 +174,7 @@ class updating_a_records : AppCompatActivity() {
     }
 
     private fun deleteData(cusName: String){
-        databaseReference=FirebaseDatabase.getInstance().getReference("customers")
+        databaseReference=FirebaseDatabase.getInstance().getReference("booking")
         databaseReference.child(cusName).removeValue().addOnSuccessListener {
             binding.cusName.text.clear()
             binding.cusPhone.text.clear()

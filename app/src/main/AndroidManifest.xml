@@ -12,11 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MadProject"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".home1"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".UserlistActivity"-->
+<!--            android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt;-->
+        <!-- android:name=".MainActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity android:name=".SignUp" /> -->
+        <!-- <activity android:name=".SignIn" /> -->
+        <!-- <activity android:name=".home" /> -->
+        <!-- <activity android:name=".SelectSignUp" /> -->
+        <!-- <activity android:name=".SignUpGuide" /> -->
+        <!-- <activity android:name=".SignUpAuth" /> -->
+        <!-- <activity android:name=".AdminDashboard" /> -->
+        <!-- <activity android:name=".GuideDashboard" /> -->
+        <!-- <activity android:name=".SignUpGuideDtails" /> -->
+        <!-- <activity android:name=".BookAGuide" /> -->
+        <!-- <activity android:name=".villa"/> -->
+        <!-- <activity android:name=".GuideList"/> -->
         <activity
-            android:name=".UserlistActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".home1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,19 +46,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUp" />
-        <activity android:name=".SignIn" />
-        <activity android:name=".home" />
-        <activity android:name=".SelectSignUp" />
-        <activity android:name=".SignUpGuide" />
-        <activity android:name=".SignUpAuth" />
-        <activity android:name=".AdminDashboard" />
-        <activity android:name=".GuideDashboard" />
-        <activity android:name=".SignUpGuideDtails" />
-        <activity android:name=".BookAGuide" />
-        <activity android:name=".villa"/>
-        <activity android:name=".GuideList"/>
+        <activity
+            android:name=".kandy"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+<!--        <activity-->
+<!--            android:name=".select_destination"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity android:name=".select_destination" />
+
+        <activity android:name=".botique_villa" />
+        <activity android:name=".villa" />
+        <activity android:name=".view_villa" />
+
+        <activity android:name=".check_villa_details" />
+        <activity android:name=".addtocart" />
+        <activity android:name=".travel_cart1" />
+        <activity android:name=".updating_a_records" />
     </application>
 
 </manifest>

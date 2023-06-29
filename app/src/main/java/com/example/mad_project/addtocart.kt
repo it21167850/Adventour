@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -12,6 +13,9 @@ import com.google.firebase.database.FirebaseDatabase
 class addtocart : AppCompatActivity() {
 
     private lateinit var dbRef: DatabaseReference
+
+    lateinit var display : TextView
+    lateinit var add:Button
 
     private lateinit var editcusName:EditText
     private lateinit var editcusPhone:EditText
@@ -23,9 +27,12 @@ class addtocart : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+
+
         setContentView(R.layout.activity_addtocart)
 
-        dbRef = FirebaseDatabase.getInstance().getReference("customers")
+        dbRef = FirebaseDatabase.getInstance().getReference("booking")
 
 
 
@@ -38,7 +45,8 @@ class addtocart : AppCompatActivity() {
 
 
 
-
+        display=findViewById<EditText>(R.id.display_result)
+        add=findViewById<Button>(R.id.btnAdd)
         editcusName=findViewById<EditText>(R.id.editcusName)
         editcusPhone=findViewById<EditText>(R.id.editcusPhone)
         editcusEmail=findViewById<EditText>(R.id.editcusEmail)
@@ -46,7 +54,18 @@ class addtocart : AppCompatActivity() {
         editcusNight=findViewById<EditText>(R.id.editcusNight)
         editcusPeople=findViewById<EditText>(R.id.editcusPeople)
 
+
+
+        add.setOnClickListener{
+
+            val NumOfNight=editcusNight.text.toString().toInt()
+            val NumOfPeople=editcusPeople.text.toString().toInt()
+            addition(NumOfNight, NumOfPeople)
+        }
+
         val btnSubmit = findViewById<Button>(R.id.btnSubmit)
+
+
 
         btnSubmit.setOnClickListener {
             val intent = Intent( this,travel_cart1::class.java)
@@ -56,6 +75,14 @@ class addtocart : AppCompatActivity() {
             saveCusData()
         }
                 }
+
+
+    private fun addition(NumOfNight: Int, NumOfPeople: Int) {
+        val result = 1000*NumOfNight + 500*NumOfPeople
+        display.text=result.toString()
+
+    }
+
 
     private fun saveCusData() {
 
@@ -77,6 +104,10 @@ class addtocart : AppCompatActivity() {
             editcusPhone.error="please enter phone Number"
             return
         }
+        if(PhoneNumber.length<10 || PhoneNumber.length>13){
+            editcusPhone.error="Invalid number"
+            return
+        }
         if(Email.isEmpty()){
             editcusEmail.error="please enter Email"
             return
@@ -93,15 +124,15 @@ class addtocart : AppCompatActivity() {
             editcusPeople.error="please enter Number pf peoples"
             return
         }
-        val cusNic=dbRef.push().key!!
+        val cusName=dbRef.push().key!!
 
-        val user =AddtocartModel(cusNic,Name, PhoneNumber,Email,Date,NumOfNight,NumOfPeople)
-
-
+        val user =AddtocartModel(Name, PhoneNumber,Email,Date,NumOfNight,NumOfPeople)
 
 
 
-        dbRef.child(cusNic).setValue(user)
+
+
+        dbRef.child(cusName).setValue(user)
             .addOnCanceledListener {
                 Toast.makeText(this,"sucsesfull booking", Toast.LENGTH_SHORT).show()
                 editcusName.setText("")

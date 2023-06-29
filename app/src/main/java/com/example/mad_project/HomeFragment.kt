@@ -13,6 +13,7 @@ class HomeFragment : Fragment() {
 
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -21,6 +22,7 @@ class HomeFragment : Fragment() {
 
         // Get a reference to the button
         val button = view.findViewById<Button>(R.id.btn_book_a_guide)
+
 
         // Set a click listener on the button
         button.setOnClickListener {
@@ -31,7 +33,11 @@ class HomeFragment : Fragment() {
                 .replace(R.id.frame_layout, nextFragment)
                 .addToBackStack(null)
                 .commit()
+
+
+
         }
+
 
         return view
     }
